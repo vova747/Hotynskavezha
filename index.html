@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хотинський замок</title>
+    <style>
+        :root {
+            --primary-color: #35424a;
+            --secondary-color: #e8491d;
+            --text-color: #333;
+            --background-color: #f4f4f4;
+            --main-background: #ffffff;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #e6d8ad;
+            color: var(--text-color);
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        nav {
+            background-color: var(--secondary-color);
+            padding: 0.5rem 0;
+        }
+        
+        nav ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+        
+        nav li {
+            display: inline;
+            margin: 0 15px;
+        }
+        
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: var(--primary-color);
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: var(--main-background);
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+        }
+        
+        section {
+            margin-bottom: 40px;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        img:hover {
+            transform: scale(1.05);
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        footer {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        @media (max-width: 768px) {
+            nav li {
+                display: block;
+                margin: 10px 0;
+            }
+            
+            .gallery {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Хотинський замок</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#home">Головна</a></li>
+            <li><a href="#history">Історія</a></li>
+            <li><a href="#gallery">Фотоальбом</a></li>
+            <li><a href="#location">Розташування</a></li>
+            <li><a href="#tours">Екскурсії та ціни</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h2>Ласкаво просимо до Хотинського замку</h2>
+            <img src="https://karpaty.love/uploads/posts/2017-12/1513197841_khotynska-fortecja-25.jpg" alt="Хотинський замок">
+            <p>Хотинський замок - це величний середньовічний замок, розташований у місті Хотин, Чернівецька область, Україна. Замок є одним з найбільш вражаючих та добре збережених фортифікаційних споруд в Україні.</p>
+            <p>Адреса: вул. Замкова, 1, м. Хотин, Чернівецька область, 60000</p>
+        </section>
+
+        <section id="history">
+            <h2>Історія замку</h2>
+            <p>Хотинський замок має багату історію, що сягає XI століття. Протягом століть замок був свідком численних битв та змін влади.</p>
+            <h3>Цікаві факти:</h3>
+            <ul>
+                <li>Замок був збудований на місці давньоруського городища.</li>
+                <li>У XV столітті замок був значно розширений та укріплений.</li>
+                <li>Хотинська фортеця відіграла ключову роль у Хотинській війні 1621 року.</li>
+                <li>Замок був важливим стратегічним об'єктом на кордоні між Польщею, Туреччиною та Молдавією.</li>
+                <li>У XVIII столітті фортеця була модернізована за проектом французького інженера Франсуа Кауффера.</li>
+            </ul>
+        </section>
+
+        <section id="gallery">
+            <h2>Фотоальбом</h2>
+            <div class="gallery">
+                <img src="https://promin.cv.ua/uploads/posts/2016-05/thumbs/1462919502_13103421_248621788821557_8173230298594232195_n.jpg" alt="Хотинський замок вид зверху">
+                <img src="https://tourservice.org.ua/imag/hotin_002.jpg" alt="Внутрішній двір Хотинського замку">
+                <img src="https://static.espreso.tv/uploads/article/2430449/images/im-001.JPG" alt="Стіни Хотинського замку">
+                <img src="https://travel-al.com.ua/wp-content/uploads/2020/02/IMG_0587.jpg" alt="Панорама Хотинського замку">
+                <img src="https://khotynska-fortecya.cv.ua/i/2810107.jpg" alt="Вежа Хотинського замку">
+                <img src="https://khotynska-fortecya.cv.ua/i/1316118.jpg" alt="Хотинський замок взимку">
+                <img src="https://find-way.com.ua/components/com_jshopping/files/img_products/full_hotinska_fortecya_na_dn%D1%96str%D1%96_48_5213799_26_4973927_chern%D1%96vecka_oblast_386.jpg" alt="Хотинський замок взимку">
+                <img src="https://religionpravda.com.ua/wp-content/uploads/2022/02/271877872_451690683180825_5768225893215420638_n.jpg" alt="Хотинський замок взимку">
+            </div>
+        </section>
+
+        <section id="location">
+            <h2>Розташування</h2>
+            <p>Хотинський замок розташований на правому березі річки Дністер у місті Хотин, Чернівецька область, Україна.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2638.6099405168313!2d26.491277615641837!3d48.51114667925649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4733a0c7e5b94ef5%3A0x2f1e39d37d3f9b0a!2z0KXQvtGC0LjQvdGB0YzQutCwINGE0L7RgNGC0LXRhtGP!5e0!3m2!1suk!2sua!4v1639580347855!5m2!1suk!2sua" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+        <section id="tours">
+            <h2>Екскурсії та ціни</h2>
+            <p>Хотинський замок відкритий для відвідувачів щодня з 9:00 до 18:00.</p>
+            <h3>Вартість квитків:</h3>
+            <ul>
+                <li>Дорослі: 80 грн</li>
+                <li>Діти (6-16 років): 40 грн</li>
+                <li>Діти до 6 років: безкоштовно</li>
+                <li>Пенсіонери: 60 грн</li>
+                <li>Студенти: 50 грн</li>
+            </ul>
+            <p>Екскурсії проводяться кожні 2 години. Вартість екскурсії - 150 грн з групи до 10 осіб.</p>
+            <p>Для більших груп та індивідуальних екскурсій, будь ласка, зв'яжіться з адміністрацією замку.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Хотинський замок. Всі права захищені.</p>
+    </footer>
+</body>
+</html>
